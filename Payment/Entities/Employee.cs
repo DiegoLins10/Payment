@@ -22,7 +22,7 @@ namespace Payment.Entities
             ValuePerHour = valuePerHour;
         }
 
-        public double Payment()
+        public virtual double Payment()
         {
             return ValuePerHour * Hours;
         }
