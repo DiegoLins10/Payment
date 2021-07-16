@@ -18,14 +18,14 @@ namespace Payment
             {
                 Console.WriteLine($"Employee #{i} data:");
                 Console.Write("Outsourced (y/n)? ");
-                char ch = char.Parse(Console.ReadLine());
+                string ch = Console.ReadLine();
                 Console.Write("Name: ");
                 String name = Console.ReadLine();
                 Console.Write("Hours: ");
                 int hours = int.Parse(Console.ReadLine());
                 Console.Write("Value per hour: ");
                 double valuePerHour = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-                if (ch == 'y')
+                if (ch.Equals("y") || ch.Equals("Y"))
                 {
                     Console.Write("Additional charge: ");
                     double additionalCharge = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
